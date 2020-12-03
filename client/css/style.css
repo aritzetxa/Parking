@@ -1,0 +1,525 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 16px;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.row {
+  align-items: center;
+  display: flex;
+}
+.col-xs-1 {
+  width: calc(8.33333333%);
+}
+.col-xs-2 {
+  width: calc(16.66666667%);
+}
+.col-xs-3 {
+  width: calc(25%);
+}
+.col-xs-4 {
+  width: calc(33.33333333%);
+}
+.col-xs-5 {
+  width: calc(41.66666667%);
+}
+.col-xs-6 {
+  width: calc(50%);
+}
+.col-xs-7 {
+  width: calc(58.33333333%);
+}
+.col-xs-8 {
+  width: calc(66.66666667%);
+}
+.col-xs-9 {
+  width: calc(66.66666667%);
+}
+.col-xs-10 {
+  width: calc(83.33333333%);
+}
+.col-xs-11 {
+  width: calc(91.66666667%);
+}
+.col-xs-12 {
+  width: calc(100%);
+}
+.dcolumnas-xs {
+  flex-direction: column;
+}
+.dfilas-xs {
+  flex-direction: row;
+}
+.jaround-xs {
+  justify-content: space-around;
+}
+.jbetween-xs {
+  justify-content: space-between;
+}
+.jcenter-xs {
+  justify-content: center;
+}
+.filas-xs {
+  flex-wrap: wrap;
+}
+.fstart-xs {
+  align-items: flex-start;
+}
+.fend-xs {
+  align-items: flex-end;
+}
+header {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  min-height: 4.5em;
+  height: 4.5em;
+  max-height: 4.5em;
+  box-shadow: 0px 3px 5px #ccc;
+}
+header img {
+  height: 100%;
+}
+header nav ul {
+  display: none;
+  position: absolute;
+  width: 50%;
+  margin: 0 -25%;
+  top: 5em;
+  background: #ffffff;
+  border: 2px solid #e57e1f;
+  z-index: 10000;
+}
+header nav ul li {
+  color: #272727;
+  padding: 1em;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  font-size: 1.2em;
+  cursor: pointer;
+}
+header ul li img {
+  width: 32px;
+  height: 32px;
+}
+header nav ul li:hover,
+header nav ul i:hover {
+  color: #e57e1f;
+  border-bottom: 4px solid #e57e1f;
+}
+header nav ul li:active,
+header nav ul i:active {
+  color: #e57e1f;
+}
+@media all and (min-width: 47em) {
+  header nav i {
+    display: none !important;
+  }
+  header nav ul {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin: 0 ;
+    background: none;
+    border: none;
+  }
+  header nav ul li {
+    display: inline-block !important;
+    border-top: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: none;
+  }
+  header nav ul li:hover,
+  header nav ul i:hover {
+    border-top: 4px solid #e57e1f;
+    border-bottom: none;
+  }
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #EEEDED;
+}
+main {
+  padding: 1em;
+  display: flex;
+  height: 100%;
+}
+section {
+  background-color: #fff;
+  box-shadow: 0px 14px 41px -6px #707070;
+  overflow: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  width: 100%;
+}
+footer {
+  background: #272727;
+  color: #ffffff;
+  padding: 1em 0 1em 0;
+  margin-top: auto;
+  text-align: center;
+}
+footer div {
+  margin: 0 auto;
+}
+.btn {
+  color: white;
+  padding: 0.5em 1em 0.8em 1em;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px 0px #ccc;
+  background-color: #e57e1f;
+  font-size: 1em;
+}
+#inicio label {
+  color: #e57e1f;
+  width: 100%;
+}
+#inicio select {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  margin: 0.5em 0;
+  border-radius: 0;
+  border: 1px solid #EEEDED;
+  color: #707070;
+  background-color: #f8f8f8;
+  height: 45px;
+}
+#inicio button {
+  margin-left: 60%;
+  margin-bottom: 1em;
+  width: 40%;
+  max-width: 200px;
+}
+#inicio h3 {
+  color: #e57e1f;
+  padding-bottom: 1em;
+}
+#inicio article p {
+  color: #797c80;
+}
+#inicio .picker {
+  margin-bottom: 1em;
+}
+#reservas,
+#reservas article {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#reservas canvas {
+  height: 100%;
+  width: 100%;
+}
+#reservas nav {
+  position: absolute;
+  bottom: 0;
+  width: 91%;
+  padding-bottom: 1em;
+}
+#reservas nav i {
+  background-color: #e57e1f;
+  border-radius: 0.3em;
+  font-size: 2em;
+  color: white;
+}
+#reservas ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+#reservas ul li {
+  display: flex;
+  flex-direction: column;
+}
+#reservas nav div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#reservas label {
+  margin-bottom: 0.5em;
+  color: #e57e1f;
+}
+#reservas div {
+  display: flex;
+  flex-direction: column;
+}
+#reservas div input,
+#reservas div select {
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+}
+#reservas #msj {
+  position: absolute;
+  top: 5%;
+  width: 50%;
+  right: 25%;
+  text-align: center;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+}
+#ubicacion {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+#ubicacion i {
+  position: absolute;
+  z-index: 100;
+  bottom: 30px;
+  left: 21px;
+  font-size: 3em;
+  color: #e57e1f;
+}
+#servicios h1 {
+  text-align: center;
+  color: #e57e1f;
+  font-size: 3em;
+  text-decoration: underline;
+}
+#servicios h3 {
+  text-align: center;
+  color: #e57e1f;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+#servicios article {
+  padding: 1em;
+}
+#servicios article div div {
+  flex-direction: column;
+  margin: 1em 0;
+  box-sizing: border-box;
+}
+#servicios article div div i {
+  color: #e57e1f;
+  font-size: 3em;
+}
+#tarifas h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #e57e1f;
+}
+#tarifas h2 {
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
+}
+#tarifas article {
+  margin: 1em 0;
+}
+#tarifas article h3 {
+  color: #e57e1f;
+  text-decoration: underline;
+  margin-bottom: 0.3em;
+}
+#tarifas article i {
+  font-size: 5em;
+  float: left;
+  margin-right: 0.3em;
+  color: #e57e1f;
+  margin-bottom: 0.7em;
+}
+.picker {
+  width: 50%;
+  padding-top: 1em;
+  clear: both;
+  position: relative;
+  display: flex;
+}
+.picker input {
+  width: 75%;
+  background-color: #f8f8f8;
+  font-size: 1em;
+  border: 1px solid #EEEDED;
+  color: #707070;
+  padding: 0.5em;
+}
+.picker i {
+  font-size: 1.8em;
+  margin: 0.3em 0.3em 0.3em 0;
+}
+.timePicker {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  z-index: 100;
+}
+.timePicker i {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
+}
+.datePicker {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 1em;
+  position: absolute;
+  z-index: 100;
+  top: 87%;
+  box-shadow: 2px 2px 8px #ccc;
+}
+.datePicker table caption {
+  color: #e57e1f;
+  border-bottom: 1px solid #e57e1f;
+  margin-bottom: 0.5em;
+}
+.datePicker th {
+  color: #ccc;
+  padding: 0.3em;
+}
+.datePicker .selectable {
+  color: #000;
+}
+.slider img {
+  display: none;
+  max-width: 100%;
+  margin-bottom: 2em;
+  box-shadow: 0px 14px 41px -6px #707070;
+}
+@media all and (min-width: 1024px) {
+  .slider img {
+    display: block;
+  }
+}

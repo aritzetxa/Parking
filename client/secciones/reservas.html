@@ -1,0 +1,59 @@
+<section id="reservas">
+
+	<article>
+		<canvas id="MapaSeleccionPlazas"></canvas>
+		<label id="msj"></label>
+	</article>
+
+	<article style="display: none">
+		<span id="msj" style="display: none; top: -4%;"></span>
+		<label>Datos Personales</label>
+		<div>
+			<input type="text" name="firstName" placeholder="Nombre y Apellidos" value="Perico Perez">
+			<div style="flex-direction: row;">
+				<select name="documento" id="" style="width: 30%">
+					<option value="dni">DNI</option>
+					<option value="nif">NIF</option>
+				</select>
+				<input type="text" name="documentoVal" value="12312334Z" style="width: 65%">
+			</div>
+			<input type="text" name="email" value="aaa@gamil.com" placeholder="Correo Electronico">
+			<input type="text" name="telefono" value="123123123" placeholder="Telefono">
+		</div>
+		<label>Datos Vehiculo</label>
+		<div>
+			<!--<input type="text" name="longitud" placeholder="Longitud o Plazas">-->
+			<input type="text" name="matricula" value="1231AA" placeholder="Matricula (Opcional)">
+		</div>
+		<label>Visitantes</label>
+		<div>
+			<label>Adultos</label>
+			<input type="text" name="numPersonas" placeholder="Numero de personas" value="1">
+			<label>Menores de 12 Años</label>
+			<input type="text" name="numNinos" placeholder="Numero de personas" value="2">
+		</div>
+	</article>
+
+	<article style="display: none;">
+		<h3>Seleccione su metodo de pago</h3>
+		<div>
+			<label>Transferecnia Bancaria</label>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam placeat harum sapiente sit ex! Tempora quisquam eos a ullam saepe, iste nemo necessitatibus, sapiente aliquid veniam autem aliquam inventore ipsam?</p>
+			<button id="btnTransferencia">Pagar Ahora</button>
+		</div>
+		<div>
+			<label>Giro Postal</label>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, debitis laboriosam aperiam quia ut excepturi temporibus. Sunt repellendus neque ipsa unde quo quae eum vel in labore rerum, consequuntur debitis.</p>
+			<button id="btnGiro">Pagar Ahora</button>
+		</div>
+	</article>
+	<article style="display: none;">
+		La informacion necesaria para realizar el pago se ha enviado a su correo. Gracias por realizar se reserva.
+	</article>
+
+	<!-- Botones siguiente y anterior -->
+	<nav class="row jbetween-xs">
+		<i id="btnAnterior" class="material-icons">arrow_back</i>
+		<i id="btnSiguiente" class="material-icons">arrow_forward</i>
+	</nav>
+</section>
